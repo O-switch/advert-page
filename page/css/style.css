@@ -1,0 +1,165 @@
+/* google font
+ font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h3,
+h3 span {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+header h3 span {
+    color: coral;
+}
+
+header ul li {
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 40px;
+    transition: all .3s ease;
+}
+
+header ul li:hover {
+    transform: translateY(-5px);
+}
+
+header ul li a {
+    color: black;
+}
+
+header ul li a:hover {
+    border-bottom: 1px solid coral;
+
+}
+
+.content {
+    position: relative;
+    width: 100%;
+
+}
+
+.content .text {
+    max-width: 600px;
+    animation: slideRight 1s ease;
+}
+
+.content .text h2 {
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.content .text a {
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    background: black;
+    color: #b6b6b6;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    transition: .3s ease;
+}
+
+.content .text a:hover {
+    transform: translate(-5px, -5px);
+}
+
+.content .imgBox {
+    max-width: 600px;
+    padding-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgBox img {
+    max-width: 430px;
+    height: 350px;
+    animation: slideLeft 1s ease;
+}
+
+.items {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideTop 1s ease;
+}
+
+.items li {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.items li:first-child>img {
+    height: 75px;
+}
+
+.items li:hover {
+    transform: translateY(-15px);
+}
+
+.items img {
+    max-width: 80px;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100%);
+    }
+}
